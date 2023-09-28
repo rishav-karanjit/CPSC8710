@@ -1,0 +1,23 @@
+.score {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 5%;
+  }
+  
+.points {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 5%;
+}
+  
+.clicks {
+    position: fixed;
+    top: 0;
+    left: 25%;
+    width: 50%;
+    padding: 5%;
+    text-align: center;
+}
+  
