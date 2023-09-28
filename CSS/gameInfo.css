@@ -1,15 +1,13 @@
 .score {
     position: fixed;
-    left: 0;
+    left: 10%;
     top: 0;
-    padding: 5%;
-  }
+}
   
-.points {
+.level {
     position: fixed;
-    right: 0;
+    right: 10%;
     top: 0;
-    padding: 5%;
 }
   
 .clicks {
@@ -17,7 +15,6 @@
     top: 0;
     left: 25%;
     width: 50%;
-    padding: 5%;
     text-align: center;
 }
   
