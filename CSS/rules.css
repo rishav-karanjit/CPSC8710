@@ -1,0 +1,32 @@
+.Gamerules {
+    background-color: #f2f2f2;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 50vw;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.Gamerules h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Gamerules ol {
+    color: #555;
+    list-style-type: decimal;
+    margin-bottom: 20px;
+}
+
+.Gamerules ol li {
+    margin-bottom: 10px;
+}
+
+.Gamerules p {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+}
