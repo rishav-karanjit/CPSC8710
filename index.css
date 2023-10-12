@@ -1,0 +1,13 @@
+.hide {
+    display: none;
+}
+
+/* Centering styles for the h1 title */
+.centered-title {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 100%;             /* Take up the full viewport height */
+    text-align: center;      /* Ensure text is centered within the element */
+    font-size: 2em;          /* Adjust font size as per preference */
+}
