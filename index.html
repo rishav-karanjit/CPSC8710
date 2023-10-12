@@ -4,6 +4,8 @@
     <title>CPSC 8710 Game</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="CSS/gameInfo.css">
+    <link rel="stylesheet" href="CSS/rules.css">
+    <link rel="stylesheet" href="CSS/GameMenuControl.css">
 </head>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -14,6 +16,44 @@
         <div class="level hide">Level: 0</div>
         <div class="clicks hide">Clicks: 0</div>
     </div>
+
+    <h1 class="centered-title"> Game Name</h1>
+
+    <div class="Gamerules">
+        <h2>Rules</h2>
+        <ol>
+            <li>
+                Match three colors to clear them and earn points. Only sets of three will clear, even if more touch.
+            </li>
+            <li>
+                Click on a row and the entire row will move to the top of the column.
+            </li>
+            <li>
+                After clearing blocks, remaining blocks in the row shift left.
+            </li>
+            <li>
+                Fewer clicks earn more points.
+            </li>
+        </ol>
+        <p>
+            Enjoy 25 fun levels in the game!
+        </p>
+    </div>
+
+    <div class="game-container">
+        <div class="column">
+            <div class="start-button">Start</div>
+        </div>
+    </div>
+      
+    <div id="restartBtn" class="restart hide">Restart Level</div>
+      
+    
+
+
+
+
+
 </body>
 </body>
 </html>
