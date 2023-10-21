@@ -2,18 +2,115 @@
 <html>
 <head>
     <title>CPSC 8710 Game</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/gameInfo.css">
 </head>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
+
+<script src="JS/script.js"></script>
 <body>
+
+  <div id="clouds-container">
+    <div id="cloud-one" class="cloud"></div>
+    <div id="cloud-two" class="cloud"></div>
+    <div id="cloud-three" class="cloud"></div>
+    </div>
+
     <div class="game-info">
-        <div class="score hide">Score: 0</div>
+      
+        <div class="score hide">Points: 0</div>
         <div class="level hide">Level: 0</div>
         <div class="clicks hide">Clicks: 0</div>
-    </div>
+      </div>
+      
+      
+      
+
+      
+      
+      <div class="block-shape">
+   
+        <div class="face">
+      
+          <div class="eye-white">
+            <div class="eye-ball"></div>
+          </div>
+         
+          <div class="eye-white rgt">
+            <div class="eye-ball"></div>
+          </div>
+
+        </div>
+        <div class="body"> </div>
+        <div class="foot">
+     
+        </div>
+      
+      </div>
+      <div class="card anim-block">
+        <div class="hand"></div>
+        <div class="hand rgt"></div>
+        <div class="card-body">
+      <div class="rules">
+        <h2 class="text-center">Rules</h2>
+        <ol>
+          <li>
+            Match three colors to clear them and earn points. Only sets of three will clear, even if more touch.
+
+          </li>
+          <li>
+            Click on a row and the entire row will move to the top of the column.
+          </li>
+          <li>
+            After clearing blocks, remaining blocks in the row shift left.
+          </li>
+          <li>
+            Fewer clicks earn more points.
+          </li>
+        </ol>
+        <p class="text-center">
+            <i>There are a total of 25 levels to play! Have fun!</i>
+        </p>
+      </div>
+      <div class="container">
+        <div class="col">
+          <div class="start text-center"><button class="btn btn-green">Start</button></div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <div id="restart" class="restart hide text-center mt-1"><button class="btn btn-red">Restart Level</button></div>
 </body>
-</body>
+
+<script>
+ /* $('.start').mouseover(function(){
+$('.eye-white .eye-ball').addClass('up')
+});
+$('.start').mouseout(function(){
+$('.eye-white .eye-ball').removeClass('up')
+});*/
+
+// block Eye move
+$(document).on( "mousemove", function( event ) {
+var dw = $(document).width() / 15;
+var dh = $(document).height() / 15;
+var x = event.pageX/ dw;
+var y = event.pageY/ dh;
+$('.eye-ball').css({
+  width : x,
+  height : y
+});
+});
+
+// validation
+
+
+
+</script>
+
 </html>
+
+
