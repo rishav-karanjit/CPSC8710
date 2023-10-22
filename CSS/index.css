@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: "Crepes French";
-  src: url(../fonts/CrepesFrench.ttf);
+  font-family: "Fun Cartoon";
+  src: url('../fonts/fun-cartoon-2.regular.ttf');
 }
 
 .clearfix:after {
@@ -35,7 +35,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom;
   height: calc(100vh - 10px);
-  font-family: 'Arial', sans-serif;
+  font-family: 'Fun Cartoon', sans-serif;
   cursor: default;
 }
 
@@ -232,6 +232,7 @@ a:hover {
 
 .game-card{
   max-height: 550px;
+  min-height: 550px;
   overflow-y: auto;
 }
 .card-body {
@@ -291,13 +292,13 @@ a:hover {
 }
 
 .win {
-  font-size: 6rem;
+  font-size: 2rem;
   text-align: center;
   padding: 1rem;
 }
 
 .win-score {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -494,7 +495,7 @@ a:hover {
 }
 
 .foot {
-  top: 598px;
+  top: 612px;
   left: 0px;
   position: absolute;
   background-image: url("../img/Three_legs.png");
@@ -519,7 +520,7 @@ a:hover {
 	height: 60px;
 	top: 40%;
 	right: 0px;
-		animation-name: clouds-move;
+		animation-name: clouds-move-x;
 	animation-duration: 20s;
 	animation-delay: -8s;
 		animation-iteration-count: infinite;
@@ -531,7 +532,7 @@ a:hover {
 	height: 40px;
 	top: 55%;
 	right: 0px;
-		animation-name: clouds-move;
+		animation-name: clouds-move-x;
 	animation-duration: 25s;
 	animation-delay: -2s;
 	animation-iteration-count: infinite;
@@ -544,7 +545,7 @@ a:hover {
 	height: 60px;
 	top: 30%;
 	right: 0px;
-		animation-name: clouds-move;
+		animation-name: clouds-move-x;
 	animation-duration: 15s;
 	animation-delay: -10s;
 animation-iteration-count: infinite;
@@ -587,10 +588,11 @@ background-color: #ffffff;
   width: 190px;
     height: 118px;
     line-height: 50px;
+    animation: clouds-move-y 4s infinite;
 
 }
 
-@keyframes clouds-move {
+@keyframes clouds-move-x {
 0% {transform: translateX(30vw);
 	}
 100% {transform: translateX(-110vw);
@@ -600,6 +602,14 @@ background-color: #ffffff;
 	overflow: clip;
 }
 
+@keyframes clouds-move-y {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+}
 
 
 @media screen and (min-width: 320px) {

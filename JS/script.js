@@ -390,18 +390,30 @@ function LoadNextLevel() {
       debugger;
       (function frame() {
         confetti({
-          particleCount: 100,
+          particleCount: 200,
           angle: 60,
           spread: 100,
           origin: { x: 0 },
+          shapes: ["text"],
+          shapeOptions: {
+            text: {
+              value: ["💧"],
+            },
+          },
       
         });
       
         confetti({
-          particleCount: 100,
+          particleCount: 200,
           angle: 120,
           spread: 100,
           origin: { x: 1 },
+          shapes: ["text"],
+          shapeOptions: {
+            text: {
+              value: ["💧"],
+            },
+          },
       
         });
       
@@ -420,7 +432,7 @@ function LoadNextLevel() {
 function Level1() {
   level = 1;
   column = [];
-  
+
   column.unshift(['orange']);
   column.unshift(['orange']);
   column.unshift(['green']);
@@ -793,6 +805,6 @@ function Level25() {
 }
 
 function Win() {
-  $('body').text('');
-  $('body').append('<div class="win">You Win!<div class="win-score">Your final score was:<br/>' + points +'</div><div class="win-text">Congratulations for completing the game! Thanks for taking the time to play through. I hope you enjoyed playing! Feel free to play again and try for a higher score!<br/><br/>Feel free to check out more of my <a href="https://codepen.io/charlie-volpe/">CodePens</a> as well as <a href="http://charlievolpe.com">my website</a>. Post your highscore in the comments if you like!</div></div>');
+  //$('body').text('');
+  $('.game-card').append('<div class="win">You Win!<div class="win-score">Your final score was:<br/>' + points +'</div><div class="win-text">Congratulations for completing the game! Thanks for taking the time to play through. I hope you enjoyed playing! Feel free to play again and try for a higher score!</div></div>');
 }
