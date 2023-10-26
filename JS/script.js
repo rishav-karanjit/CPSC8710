@@ -40,6 +40,7 @@ $(function() {
     $('.hand').addClass('hide');
     $('.hand.rgt').addClass('hide');
     $('.rules').addClass('hide');
+    $('.logo').addClass('hide');
     $('.card.anim-block').addClass('game-card');
     
   });
