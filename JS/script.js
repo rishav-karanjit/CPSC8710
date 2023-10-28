@@ -41,6 +41,7 @@ $(function() {
     $('.hand.rgt').addClass('hide');
     $('.rules').addClass('hide');
     $('.logo').addClass('hide');
+    $('.card.anim-block').removeClass('watermark');
     $('.card.anim-block').addClass('game-card');
     
   });
