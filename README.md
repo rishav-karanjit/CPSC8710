@@ -1,5 +1,9 @@
 # Blockbuzz
 
+<p align="center">
+  <img src="https://github.com/rishav-karanjit/CPSC8710/blob/main/img/logo.png" />
+</p>
+
 Blockbuzz is a stress-buster web game for everyone! Match the blocks in a column and earn points in this booming puzzle game.
 
 Match the blocks with minimum clicks to win the maximum number of points. There are a total of 25 levels in the game. 
@@ -55,3 +59,7 @@ We were not able to dynamically create levels as we might had to create a level 
 - While integrating third-party libraries like the Confetti library, we learned the importance of understanding the capabilities and limitations of external tools. 
 - User-Centric Design: Designing with the user in mind is paramount.
 - Time Management: We learned the importance of setting achievable goals within a given timeframe.
+
+## Third party library used
+- jQuery
+- tsparticles-confetti 
