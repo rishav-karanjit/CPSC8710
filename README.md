@@ -59,3 +59,7 @@ We were not able to dynamically create levels as we might had to create a level 
 - While integrating third-party libraries like the Confetti library, we learned the importance of understanding the capabilities and limitations of external tools. 
 - User-Centric Design: Designing with the user in mind is paramount.
 - Time Management: We learned the importance of setting achievable goals within a given timeframe.
+
+## Third party library used
+- jQuery
+- tsparticles-confetti 
